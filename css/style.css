@@ -1,0 +1,979 @@
+/* google font : Inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* google font : Lobster  */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* common css starts here  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.fl-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fl-col-6 {
+    width: 50%;
+}
+
+.fl-col-3 {
+    width: 25%;
+}
+
+.fl-col-4 {
+    width: 33.33%;
+}
+
+.tw-col-5 {
+    width: 39%;
+}
+
+.tw-col-7 {
+    width: 61%;
+}
+
+/* common css ends here  */
+
+/* header css starts here  */
+header {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    padding-top: 46px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #0000001A;
+}
+
+.fl-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fl-container {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+nav ul li {
+    margin-right: 60px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a:hover {
+    color: #a4b575;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger,
+.close-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.fl-social-icon ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fl-social-icon ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.fl-social-icon ul li:last-child {
+    margin-right: 0px;
+}
+
+/* header css ends here  */
+
+/* banner section starts here */
+.fl-hero-section {
+    padding-top: 40px;
+    padding-bottom: 160px;
+}
+
+.fl-hero-section .fl-row {
+    margin: 0 -2px;
+}
+
+.fl-hero-section .fl-col-6 {
+    padding: 0 2px;
+}
+
+.fl-banner-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.fl-hero-content {
+    padding-left: 89px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E7FAFE;
+}
+
+.fl-hero-content h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -4%;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.fl-hero-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #00000099;
+    margin-bottom: 30px;
+}
+
+.fl-hero-wrap {
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.fl-recipt-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 32px;
+}
+
+.fl-recipt-btn h6 {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    position: relative;
+    padding-left: 30px;
+}
+
+.fl-recipt-btn h6::before {
+    content: '';
+    background-image: url(../images/hr-icon.png);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fl-profile-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fl-menu-pills {
+    margin-bottom: 99px;
+}
+
+.fl-menu-pills .fl-recipt-btn {
+    background-color: #0000000D;
+    margin-bottom: 0;
+}
+
+.fl-menu-pills .fl-recipt-btn:first-child {
+    margin-right: 16px;
+}
+
+.fl-menu-pills h6.fl-min::before {
+    background-image: url(../images/Timer.png);
+}
+
+.fl-menu-pills h6.fl-knife::before {
+    background-image: url(../images/ForkKnife.png);
+}
+
+.fl-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -8px;
+}
+
+.fl-profile-inner {
+    padding: 0 8px;
+}
+
+.fl-profile-inner h6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.fl-profile-inner p {
+    margin-bottom: 0px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #00000099;
+}
+
+.fl-view-btn {
+    padding: 21px 36px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.fl-view-btn a {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    margin-right: 15px;
+}
+
+.fl-view-btn a::after {
+    content: '';
+    background-image: url(../images/play-Vector.png);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* banner section starts here */
+
+/* categories section starts here  */
+
+.fl-categories-section {
+    margin-bottom: 200px;
+}
+
+.fl-categories-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.fl-categories-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.fl-categories-box {
+    border-radius: 30px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.breakfast-box {
+    background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%);
+}
+
+.vegan-box {
+    background: linear-gradient(180deg, rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+}
+
+.meat-box {
+    background: linear-gradient(180deg, rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%);
+}
+
+.dessert-box {
+    background: linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+}
+
+.lunch-box {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.chocolate-box {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.fl-categories-box img {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.fl-categories-box h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    margin-bottom: 30px;
+}
+
+.fl-categories-title h2,
+.fl-simply-section h2,
+.fl-chef-content h2,
+.fl-chef-title h2,
+.fl-delicious-title h2,
+.deliciousness-inbox-wrap h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -4%;
+}
+
+.fl-category-btn {
+    display: inline-block;
+    padding: 20px 27px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #000;
+    background-color: #E7FAFE;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+/* categories section ends here  */
+
+/* simple and tasty section starts here   */
+
+.fl-simply-section {
+    margin-bottom: 126px;
+}
+
+.fl-simply-section h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.fl-simply-section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 706px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.fl-simply-section .fl-row {
+    margin: 0 -20px;
+}
+
+.fl-simply-section .fl-col-4 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.simple-box,
+.health-foood-box {
+    padding: 16px;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    border-radius: 30px;
+}
+
+.health-foood-box {
+    background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
+    text-align: center;
+    height: 100%;
+}
+
+.health-foood-box h5 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    max-width: 172px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.health-foood-box img {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 25px;
+}
+
+.health-foood-box p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.6);
+    ;
+}
+
+.simple-box img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.simple-box h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -4%;
+    margin: 24px 0;
+}
+
+.simple-box .fl-menu-pills {
+    margin-bottom: 19px;
+}
+
+.simple-box .fl-menu-pills .fl-recipt-btn {
+    background: transparent;
+    padding: 0;
+}
+
+.simple-box .fl-recipt-btn h6 {
+    color: #00000099;
+}
+
+/* simple and tasty section ends here   */
+
+/* chef section starts here  */
+
+.fl-chef-section {
+    margin-bottom: 160px;
+}
+
+.fl-chef-section .fl-row {
+    margin: 0 -22px;
+    align-items: center;
+}
+
+.fl-chef-section .fl-row .fl-col-6 {
+    padding: 0 22px
+}
+
+.fl-chef-img img {
+    display: block;
+    width: 100%;
+}
+
+.fl-chef-content h2 {
+    margin-bottom: 24px;
+    max-width: 526px;
+}
+
+.fl-chef-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 0.6);
+    max-width: 508px;
+    margin-bottom: 72px;
+}
+
+.fl-lm-btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #fff;
+    background-color: #000;
+    padding: 21px 53px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+/* chef section ends here  */
+
+/* check out section starts here  */
+.fl-checkout-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+}
+
+.fl-checkout-section .fl-row {
+    margin: 0 -20px;
+}
+
+.fl-checkout-section .fl-row .fl-col-3 {
+    padding: 0 20px
+}
+
+.fl-chef-title {
+    text-align: center;
+}
+
+.fl-chef-title h2 {
+    margin-bottom: 24px;
+}
+
+.fl-chef-title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #00000099;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+.flPost {
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.flHeader,
+.flFooter {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.flHeader {
+    justify-content: space-between;
+}
+
+.flProfile {
+    display: flex;
+    align-items: center;
+}
+
+.flProfile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.flInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flInfo span {
+    font-weight: 600;
+    font-size: 10.05px;
+    line-height: 13.92px;
+    letter-spacing: -0.08px;
+    color: #262626;
+}
+
+.flInfo small {
+    font-weight: 400;
+    font-size: 8.51px;
+    line-height: 100%;
+    letter-spacing: 0.05px;
+    color: #262626;
+}
+
+.flImage {
+    width: 100%;
+    height: auto;
+}
+
+.flFooter {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flLikes {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 10.05px;
+    line-height: 13.92px;
+    letter-spacing: -0.05px;
+}
+
+.flCaption {
+    font-weight: 400;
+    font-size: 10.05px;
+    line-height: 13.92px;
+    letter-spacing: -0.08px;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.flCaption span {
+    font-weight: 600;
+    font-size: 10.05px;
+    line-height: 13.92px;
+    letter-spacing: -0.08px;
+}
+
+.flDate {
+    font-weight: 400;
+    font-size: 8.51px;
+    line-height: 100%;
+    letter-spacing: 0.04px;
+    color: #00000066;
+}
+
+.fl-checkout-section .fl-view-btn a::after {
+    background-image: url(../images/instagram-white.png);
+}
+
+.insta-visit {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* check out section ends here  */
+
+/* delicious recipe section starts here  */
+.fl-delicious-recipe-section {
+    padding: 160px 0;
+}
+
+.fl-delicious-recipe-section .fl-row {
+    margin: 0 -20px;
+    align-items: center;
+}
+
+.fl-delicious-recipe-section .fl-row .fl-col-3 {
+    padding: 0 20px
+}
+
+.fl-delicious-recipe-section .simple-box h5 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -4%;
+}
+
+.fl-delicious-recipe-section .simple-box {
+    height: 100%;
+}
+
+.fl-delicious-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.fl-delicious-title h2 {
+    max-width: 507px;
+}
+
+.fl-delicious-title p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    max-width: 620px;
+    color: #00000099;
+}
+
+/* delicious recipe section ends here  */
+
+/* Deliciousness inbox section starts here  */
+.deliciousness-inbox-wrap {
+    text-align: center;
+    position: relative;
+}
+
+.deliciousness-inbox-wrap::before {
+    content: ' ';
+    background-image: url(../images/kisspng-salad.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+.deliciousness-inbox-wrap::after {
+    content: ' ';
+    background-image: url(../images/egg-salad.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 112px;
+}
+
+.deliciousness-inbox-section .fl-container {
+    background-color: #E7F9FD;
+    padding: 80px 0;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.deliciousness-inbox-wrap h2 {
+    margin-bottom: 24px;
+}
+
+.deliciousness-inbox-wrap p {
+    color: #00000099;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    border: none;
+    padding: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    outline: none;
+    color: #00000066;
+}
+
+.subscribe-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0 32px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #333;
+}
+
+/* Deliciousness inbox section ends here  */
+
+.fl-footer-section {
+    padding-top: 160px;
+    padding-bottom: 48px;
+}
+
+.brand-wrap img {
+    margin-bottom: 16px;
+}
+
+.brand-wrap p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #00000099;
+}
+
+.fl-footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000001A;
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links ul li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #000;
+}
+
+.fl-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.fl-copyright  .fl-social-icon{position: absolute;
+    right: 0;}
+
+/* media quaries starts here */
+@media (max-width: 1399.98px) {
+
+    .fl-container,
+    .fl-nav-container {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+
+    .fl-container,
+    .fl-nav-container {
+        max-width: 960px;
+    }
+
+    nav ul li {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .fl-container,
+    .fl-nav-container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .fl-container,
+    .fl-nav-container {
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-toggle:checked+.hamburger {
+        display: none;
+    }
+
+    .menu-toggle:checked~nav {
+        display: flex;
+    }
+
+    .menu-toggle:checked~.close-icon {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .close-icon {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .fl-social-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 479.98px) {}
+
+@media (max-width: 374.98px) {}
+
+/* media quaries ends here */
